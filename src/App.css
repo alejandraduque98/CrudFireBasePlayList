@@ -1,0 +1,103 @@
+body {
+  background-color: #181824;
+  overflow: scroll;
+  font-family: "DM Serif Text", serif;
+  font-family: "Josefin Sans", sans-serif;
+}
+#mode {
+  float: right;
+  color: white;
+  font-size: 1rem;
+}
+#logo {
+  top: 100px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 4rem;
+  transition: tranform 0.2s;
+}
+#logo:hover {
+  color: black;
+  font-size: 5rem;
+}
+.cabecera {
+  background-blend-mode: soft-light;
+  background-image: url(../src/img/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a321989c;
+}
+/*container del formulario*/
+.probar {
+  position: absolute;
+  z-index: 3;
+  top: 195px;
+}
+/*sombra de lista*/
+.lista {
+  box-shadow: 0px 0px 10px 5px rgb(15, 15, 15);
+  background-color: #25273c;
+  color: rgb(233, 233, 233);
+}
+/*sombra formulario*/
+.formulario {
+  box-shadow: 0px 0px 5px 3px rgb(3, 0, 0);
+}
+
+/*--Botones---*/
+/*boton agregar*/
+.botonA {
+  background-image: linear-gradient(to left, #791d74, #531c91, #3f2bac);
+  color: antiquewhite;
+  font-weight: bold;
+  transition: 0.6s;
+}
+.botonA:hover {
+  background-image: linear-gradient(to right, #992c94, #652ca5, #5746b6);
+  color: antiquewhite;
+}
+/*boton editar*/
+.botonB {
+  background-image: linear-gradient(to left, #3329b3, #9839be, #8e77bbf1);
+  color: antiquewhite;
+  transition: 0.6s;
+}
+.botonB:hover {
+  background-image: linear-gradient(to right, #b450af, #8f59cc, #7c70c0);
+  color: antiquewhite;
+}
+/*boton eliminar*/
+.botonD {
+  background-image: linear-gradient(to right, #4273b3, #604ac0, #9b2e95);
+  color: antiquewhite;
+}
+.botonD:hover {
+  background-image: linear-gradient(to right, #b457b0, #b457b0, #b457b0);
+  color: antiquewhite;
+}
+/*boton editar*/
+.botonEdi {
+  background-image: linear-gradient(to right, #4273b3, #604ac0, #9b2e95);
+  color: antiquewhite;
+}
+.botonEdi:hover {
+  background-image: linear-gradient(to right, #4897bb, #4897bb, #4897bb);
+  color: antiquewhite;
+}
+/*barra de scroll*/
+.filaScrol {
+  max-height: 350px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.filaScrol::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(233, 227, 227, 0.233);
+}
+
+.filaScrol::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #5899b8, #814ac0, #c748c1);
+  border-radius: 20px;
+  height: 1px;
+}
