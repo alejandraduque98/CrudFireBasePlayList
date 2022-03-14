@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# CRUD FIREBASE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Texto alternativo](./Presentacion/Mockup.png)
 
-## Available Scripts
+El proyecto playList CRUD, es un proyecto realizado en React, el cual consiste de una lista de reproducción de música. En el se desarrolla una interfaz grafica amable con el usuario para que el pueda agregar, editar o eliminar sus canciones favoritas. El aplicativo de playList fue desarrollado con los lenguajes de HTML, CSS, JavaScript, y con los frameworks de Bootstrap4.6 y React. Al mismo tiempo esta conectado con una base de datos realizada en fireBase en donde se almacena la información registrada por el usuario.
 
-In the project directory, you can run:
+## Pasos a seguir para la ejecución del proyecto
 
-### `npm start`
+1. > Clonamos el git con el comando:  
+   > **git clone https://github.com/alejandraduque98/CrudFireBasePlayList.git**
+2. > Accedemos a la carpeta con el comando:  
+   > **cd CrudFireBasePlayList**
+3. > Lo instalamoscon el comando:  
+   > **npm install**
+4. > Lo inicializamos con el comando:  
+   > **npm run start\***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Inicio del proyecto
 
-### `npm test`
+| Interfaz                              | FireBase                                      |
+| ------------------------------------- | --------------------------------------------- |
+| ![alt text](/Presentacion/Inicio.png) | ![alt text](/Presentacion/InicioFirebase.png) |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Configuración en firebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Primero realizamos una configuración del firebase y registramos la aplicación. Luego realizamos el llamado al fireStore para tener una conexión entre la base de datos y nuestro proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ![Texto alternativo](./Presentacion/instalacion.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Agregar
 
-### `npm run eject`
+Se crea un estado en donde se almacene la información registrada por el usuario además creamos una función la cual lea la información ingresada y la envié al fireStore.
+| Interfaz | FireBase |
+| ---------------------------------------- | ------------- |
+| ![alt text](/Presentacion/Agregar.png) | ![alt text](/Presentacion/Agregarfirebase1.png) |
+| ![alt text](/Presentacion/Agregar2.png) | ![alt text](/Presentacion/Agregarfirebase2.png) |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Editar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+En el creamos un estado que nos permita transformar el formulario para editar, y por medio de una función asíncrona traemos la información de la base de datos y actualizamos los campos
+| Interfaz | FireBase |
+| ---------------------------------------- | ------------- |
+| ![alt text](/Presentacion/Editar1.png) | ![alt text](/Presentacion/Editar%20firebase.png) |
+![alt text](/Presentacion/Editar2.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Eliminar
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Se crea una función flecha en la cual filtraremos la información ingresada por el usuario y a través del manejo de id, él nos permitirá saber que información filtrar y cual vamos a mostrar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Interfaz                                 | FireBase                                         |
+| ---------------------------------------- | ------------------------------------------------ |
+| ![alt text](/Presentacion/Eliminar.png)  | ![alt text](/Presentacion/EliminarFirebase1.png) |
+| ![alt text](/Presentacion/Eliminar2.png) |                                                  |
 
-### Code Splitting
+# Tecnologías Usadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Tecnologías                              |               |
+| ---------------------------------------- | ------------- |
+| ![alt text](/Presentacion/react2.jpg)    | REACT         |
+| ![alt text](/Presentacion/js.png)        | JS            |
+| ![alt text](/Presentacion/css.png)       | CSS           |
+| ![alt text](/Presentacion/html.png)      | HTML          |
+| ![alt text](/Presentacion/bootstrap.png) | Bootstrap 4.6 |
